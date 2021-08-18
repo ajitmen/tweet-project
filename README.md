@@ -2,7 +2,8 @@
 
 A sample react with spring boot project to demonstrate a very minimal Twitter like app. The POC focuses only a light implementation for a 2 days of development. In real use cases, a scalable design would be appropriate.
 
-Backend API: tweetit
+Backend API: tweetit 
+
 Frontend: tweet-ui
 
 The project is deployed in AWS EC2 as docker containers as it is the simplest option to get POC running in cloud.
