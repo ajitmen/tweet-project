@@ -1,0 +1,127 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Tweetit",
+		"_postman_id": "8ae426cc-22a1-36a9-a00e-19b2a99b9ec6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ping",
+			"request": {
+				"url": "https://tweet.gonova.uk/api/hello",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTYyOTI3OTM1MywiZXhwIjoxNjI5MzU1NzUzfQ.Dw9S7t-M7gP64Th3soWk0iPH_S9mY7zKr-Gfq67e_0ugqaR0w9KuGxZVP8DSWSVhbbzQYaToYXqsBx8kuRx2hw",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Hello"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"url": "https://tweet.gonova.uk/api/auth/signin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\" : \"user1\",\n\t\"password\" : \"user1\"\n}\t"
+				},
+				"description": "Hello"
+			},
+			"response": []
+		},
+		{
+			"name": "MyTweets",
+			"request": {
+				"url": "https://tweet.gonova.uk/api/user/mytweets",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTYyOTI3OTM1MywiZXhwIjoxNjI5MzU1NzUzfQ.Dw9S7t-M7gP64Th3soWk0iPH_S9mY7zKr-Gfq67e_0ugqaR0w9KuGxZVP8DSWSVhbbzQYaToYXqsBx8kuRx2hw",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Hello"
+			},
+			"response": []
+		},
+		{
+			"name": "OthersTweets",
+			"request": {
+				"url": "https://tweet.gonova.uk/api/user/tweets",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTYyOTI3OTM1MywiZXhwIjoxNjI5MzU1NzUzfQ.Dw9S7t-M7gP64Th3soWk0iPH_S9mY7zKr-Gfq67e_0ugqaR0w9KuGxZVP8DSWSVhbbzQYaToYXqsBx8kuRx2hw",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "Hello"
+			},
+			"response": []
+		},
+		{
+			"name": "PostTweet",
+			"request": {
+				"url": "https://tweet.gonova.uk/api/user/mytweets",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImlhdCI6MTYyOTI3OTM1MywiZXhwIjoxNjI5MzU1NzUzfQ.Dw9S7t-M7gP64Th3soWk0iPH_S9mY7zKr-Gfq67e_0ugqaR0w9KuGxZVP8DSWSVhbbzQYaToYXqsBx8kuRx2hw",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \n        \"message\": \"Hello here is the new tweetyy\"\n      \n}"
+				},
+				"description": "Hello"
+			},
+			"response": []
+		},
+		{
+			"name": "Signup",
+			"request": {
+				"url": "https://tweet.gonova.uk/api/auth/signup",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\" : \"user11\",\n\t\"password\" : \"user1\",\n\t\"email\" : \"users5@email.com\"\n}\t"
+				},
+				"description": "Hello"
+			},
+			"response": []
+		}
+	]
+}
